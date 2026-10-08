@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[black]">
+    
+    <div class="w-full h-screen flex items-center justify-center">
+        <form id="alarm" class="p-5 rounded-2xl bg-[white] flex gap-3 flex-col" action="">
+            <input id="time" class="h-[50px] w-full rounded-xl border-2 border-[black] px-3 text-[30px]" placeholder="Time" type="time">
+            <div class="flex flex-col gap-3">
+                <button id="startAlarm" class="w-full h-[50px] rounded-xl bg-[green] text-[white]" type="submit">Start alarm</button>
+                <button id="stopAlarm" class="w-full h-[50px] rounded-xl bg-[red] text-[white]" type="submit">Stop alarm</button>
+            </div>
+        </form>
+    </div>
+
+    <audio id="audio" class="opacity-[0]" controls src="./assets/audio/freesound_community-generic-alarm-clock-86759.mp3"></audio>
+    <script src="./main.js"></script>
+</body>
+</html>
